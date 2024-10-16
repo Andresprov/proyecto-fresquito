@@ -1,0 +1,176 @@
+/* LOGIN */
+.Login_Html{
+    padding: 0px 20px 20px 20px ;
+    box-sizing: border-box;
+}
+
+.login_header {
+    display: flex;
+    min-height: 20px;
+    background: linear-gradient(to top, #000000, #2a1c0e);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px 5px 15px;
+    z-index: 1000;
+}
+.header_h2{
+    color: white;
+}
+.header_img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.fondo{
+    background-color: rgb(160, 160, 159);
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}
+
+.DivLog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.LoginForm{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    color: #000000;
+    height: auto;
+    width: 30vh;
+}
+.Opciones{
+    cursor: pointer;
+}
+.Ingresar{
+    background-color: #2a1c0e;
+    margin: 5px  0px; 
+    color: white;
+    cursor: pointer;
+}
+
+.Ingresar:hover{
+    background: #b37333;
+}
+
+.Login_footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-direction: row; 
+    justify-content: space-between; 
+    height: 80px; 
+    padding: 10px 20px; 
+    font-size: 14px; 
+}
+
+.Login_footer div {
+    width: 45%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Login_footer h4, ul {
+    margin: 0; 
+    line-height: 1.2; 
+}
+
+
+
+/* Index */ 
+
+/* Estilo para la parte superior con usuario y hora */
+.info-superior {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    padding: 10px;
+    background-color:rgb(160, 160, 159); /* Fondo común */
+    color: white; /* Texto blanco para contraste */
+
+}
+
+.info-superior span, .info-superior button {
+    flex-direction: column;
+    text-align: left; /* Centra los elementos */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 0; /* Ajusta el tamaño del botón para que coincida con el texto */
+    background-color: #008CBA; /* Mismo color de fondo */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005f73; /* Color de fondo al hacer hover */
+}
+
+/* Estilo para los cuadros de enlaces */
+.cuadros-enlaces {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.cuadro {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cuadro a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cuadro:hover {
+    transform: scale(1.05);
+    background-color: #555;
+}
+
+
+
+
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .cuadros-enlaces {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .cuadros-enlaces {
+        grid-template-columns: 1fr;
+    }
+
+    .info-superior {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+}
